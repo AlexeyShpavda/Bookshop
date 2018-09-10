@@ -17,9 +17,9 @@ namespace Bookshop.Models
     {
         protected override void Seed(BookContext db)
         {
-            db.Books.Add(new Book { Name = "Война и мир", Author = "Л. Толстой", Price = 220 });
-            db.Books.Add(new Book { Name = "Отцы и дети", Author = "И. Тургенев", Price = 100 });
-            db.Books.Add(new Book { Name = "Чайка", Author = "А. Чехов", Price = 150 });
+            db.Books.Add(new Book { Name = "Brave New World", Author = "Aldous Huxley", Price = 200 });
+            db.Books.Add(new Book { Name = "Fight Club", Author = "Chuck Palahniuk", Price = 210 });
+            db.Books.Add(new Book { Name = "Fahrenheit 451", Author = "Ray Bradbury - Fahrenheit 451", Price = 220 });
 
             base.Seed(db);
         }
