@@ -19,7 +19,7 @@ namespace Bookshop.Models
         {
             db.Books.Add(new Book { Name = "Brave New World", Author = "Aldous Huxley", Price = 200 });
             db.Books.Add(new Book { Name = "Fight Club", Author = "Chuck Palahniuk", Price = 210 });
-            db.Books.Add(new Book { Name = "Fahrenheit 451", Author = "Ray Bradbury - Fahrenheit 451", Price = 220 });
+            db.Books.Add(new Book { Name = "Fahrenheit 451", Author = "Ray Bradbury", Price = 220 });
 
             base.Seed(db);
         }
