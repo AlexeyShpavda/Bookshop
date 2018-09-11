@@ -7,10 +7,10 @@ namespace Bookshop.Models
 {
     public class Purchase
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Author { get; set; }
-        public int Price { get; set; }
+        public int PurchaseId { get; set; }
+        public string Person { get; set; }
+        public string Address { get; set; }
+        public int BookId { get; set; }
         public DateTime Date { get; set; }
     }
 }
