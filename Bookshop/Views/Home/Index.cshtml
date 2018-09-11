@@ -8,14 +8,16 @@
             <td><p>Name</p></td>
             <td><p>Author</p></td>
             <td><p>Price</p></td>
+            <td></td>
         </tr>
         @foreach (var book in ViewBag.Books)
         {
-            <tr>
-                <td><p>@book.Name</p></td>
-                <td><p>@book.Author</p></td>
-                <td><p>@book.Price</p></td>
-            </tr>
+        <tr>
+            <td><p>@book.Name</p></td>
+            <td><p>@book.Author</p></td>
+            <td><p>@book.Price</p></td>
+            <td><p><a href="/Home/Buy/@book.Id"</p>Buy</td>
+        </tr>
         }
     </table>
 </div>
