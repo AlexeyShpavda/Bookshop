@@ -18,6 +18,22 @@ namespace Bookshop.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Buy(int id)
+        {
+            ViewBag.BooksId = id;
+            return View();
+        }
+
+        [HttpPost]
+        public string Buy(Purchase purchase)
+        {
+            purchase.Date = DateTime.Now;
+            db.Purchases.Add(purchase);
+            db.SaveChanges();
+            return "Thank, " + purchase.Person + ", for your purchase";
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
